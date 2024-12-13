@@ -13,4 +13,4 @@ async def convert_json_to_xml(file: UploadFile = File(...)):
     return Response(content=xml_data, media_type="application/xml")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8090, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=80, reload=True)
